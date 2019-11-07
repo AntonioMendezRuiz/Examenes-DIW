@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="css/formulario.css">
+</head>
+<body>
+        <header>
+                <h1>Formulario</h1>
+                <nav>
+                    <ol>
+                        <li><a href="index.html">Página principal</a></li>
+                        <li><a href="información.html">Informacion</a></li>
+                        <li><a href="formulario.html">Formulario</a></li>
+                        <li><a href="#footer">Contacto</a></li>
+                    </ol>
+                </nav>
+            </header>
+            
+        <form class="form">
+                <h2>Contactanos</h2>
+                <p type="Nombre:"><input  maxlength="15" placeholder="Nombre"></input></p>
+                <p type="Apellidos:"><input maxlength="25" placeholder="Apellidos"></input></p>
+                <p type="Dirección:"><input maxlength="30" placeholder="Dirección"></input></p>
+                <p type="CP:"><input pattern= "[0-9]{5}"placeholder="Codigo Postal"></input></p>
+                <p type="Provincia:">
+                <select name="Provincia">
+                        <option value="1">Cádiz</option>
+                        <option value="2">Sevilla</option>
+                        <option value="3">Huelva</option>
+                </select>
+                </p>
+                <p type="Email:"><input pattern = "^[^@]+@[^@]+\.[a-zA-Z]{2,}$" placeholder="Email"></input></p>
+                <p type="Comentarios:"><textarea cols = 60 rows = 10 placeholder="Escriba aqui su comentario"></textarea></p>
+                <button>Enviar</button>
+                
+        </form>
+        <footer id="footer">
+                <div class="contacto">
+                    <p>Email: ejemplo@ejemplo.com</p>
+                    <p>Teléfono: 564564456</p>
+                    <p>Drirección: C/ejemplo Nº1</p>
+                </div>
+        </footer>
+</body>
+</html>
